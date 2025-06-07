@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useMutation } from "@tanstack/react-query";
 import { Phone, Mail, Clock, Check } from "lucide-react";
 import { Section } from "@/components/ui/section";
 import { Card, CardContent } from "@/components/ui/card";
@@ -12,7 +11,6 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { useToast } from "@/hooks/use-toast";
 import { insertConsultationRequestSchema, type InsertConsultationRequest } from "@shared/schema";
-import { apiRequest } from "@/lib/queryClient";
 
 const benefits = [
   {
@@ -52,29 +50,41 @@ export function Contact() {
     }
   });
 
-  const submitMutation = useMutation({
-    mutationFn: async (data: InsertConsultationRequest) => {
-      return await apiRequest('POST', '/api/consultation', data);
-    },
-    onSuccess: () => {
-      setIsSubmitted(true);
-      form.reset();
-      toast({
-        title: "Success!",
-        description: "Your consultation request has been submitted. We'll contact you within 24 hours.",
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const onSubmit = async (data: InsertConsultationRequest) => {
+    setIsSubmitting(true);
+    
+    try {
+      // For static deployment, form submissions should be handled by external services
+      // This example uses Formspree, but can be configured for other services
+      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
       });
-    },
-    onError: (error: any) => {
+
+      if (response.ok) {
+        setIsSubmitted(true);
+        form.reset();
+        toast({
+          title: "Success!",
+          description: "Your consultation request has been submitted. We'll contact you within 24 hours.",
+        });
+      } else {
+        throw new Error('Form submission failed');
+      }
+    } catch (error) {
       toast({
         title: "Error",
-        description: error.message || "Failed to submit form. Please try again.",
+        description: "Failed to submit form. Please try again or contact us directly.",
         variant: "destructive",
       });
+    } finally {
+      setIsSubmitting(false);
     }
-  });
-
-  const onSubmit = (data: InsertConsultationRequest) => {
-    submitMutation.mutate(data);
   };
 
   if (isSubmitted) {
@@ -283,9 +293,9 @@ export function Contact() {
                     type="submit"
                     size="lg"
                     className="w-full bg-primary hover:bg-primary/90 text-white py-4 text-lg shadow-lg"
-                    disabled={submitMutation.isPending}
+                    disabled={isSubmitting}
                   >
-                    {submitMutation.isPending ? "Submitting..." : "Get My Free Assessment"}
+                    {isSubmitting ? "Submitting..." : "Get My Free Assessment"}
                   </Button>
 
                   <p className="text-sm text-slate-600 text-center">
