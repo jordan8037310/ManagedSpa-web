@@ -13,7 +13,7 @@ export function TypeformEmbed() {
   }, []);
 
   return (
-    <Section className="py-16 bg-gradient-to-br from-blue-50 to-indigo-50">
+    <Section className="py-16 bg-gradient-to-br from-pink-50 to-rose-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl font-bold text-gray-900 mb-4">
