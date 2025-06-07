@@ -224,7 +224,15 @@ export function Contact() {
                       <FormItem>
                         <FormLabel>Phone Number</FormLabel>
                         <FormControl>
-                          <Input type="tel" {...field} />
+                          <Input 
+                            type="tel" 
+                            onChange={field.onChange}
+                            onBlur={field.onBlur}
+                            name={field.name}
+                            value={field.value || ""}
+                            disabled={field.disabled}
+                            ref={field.ref}
+                          />
                         </FormControl>
                         <FormMessage />
                       </FormItem>
@@ -280,7 +288,12 @@ export function Contact() {
                           <Textarea
                             placeholder="Describe your current IT pain points, goals, or questions..."
                             className="min-h-[100px]"
-                            {...field}
+                            onChange={field.onChange}
+                            onBlur={field.onBlur}
+                            name={field.name}
+                            value={field.value || ""}
+                            disabled={field.disabled}
+                            ref={field.ref}
                           />
                         </FormControl>
                         <FormMessage />
