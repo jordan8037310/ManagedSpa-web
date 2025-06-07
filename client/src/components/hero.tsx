@@ -29,7 +29,7 @@ export function Hero() {
                 className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg shadow-lg"
                 asChild
               >
-                <a href="/autopilot-checklist">Get Free Checklist</a>
+                <a href="/growth-checklist">Get Free Checklist</a>
               </Button>
               <Button
                 onClick={() => scrollToSection('contact')}

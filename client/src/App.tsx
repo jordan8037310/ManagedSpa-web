@@ -32,7 +32,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/assessment" component={Assessment} />
       <Route path="/privacy" component={Privacy} />
-      <Route path="/autopilot-checklist" component={AutopilotChecklist} />
+      <Route path="/growth-checklist" component={AutopilotChecklist} />
       
       {/* Service Routes */}
       <Route path="/services/help-desk" component={HelpDesk} />

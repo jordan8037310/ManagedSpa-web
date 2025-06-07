@@ -64,23 +64,23 @@ const domains = [
 const benefits = [
   {
     icon: CheckCircle,
-    title: "Reduce Manual Tasks by 80%",
-    description: "Automate routine operations from client onboarding to appointment reminders"
+    title: "Work ON Your Business, Not IN It",
+    description: "Systems that run independently, freeing you from daily operational demands"
   },
   {
     icon: Lock,
-    title: "Achieve HIPAA Compliance",
-    description: "Comprehensive security framework with audit trails and risk assessments"
+    title: "Sleep Soundly at Night",
+    description: "Complete security and compliance frameworks that protect your practice automatically"
   },
   {
     icon: Database,
-    title: "Unify Your Data",
-    description: "Connect EMR, CRM, and POS systems for complete visibility"
+    title: "Make Decisions with Confidence",
+    description: "Unified data and insights that guide smart business choices without guesswork"
   },
   {
     icon: Workflow,
-    title: "Scale Without Stress",
-    description: "Growth-ready systems that handle increased volume automatically"
+    title: "Scale at Your Own Pace",
+    description: "Infrastructure that grows with you, not against you - no stress, no limits"
   }
 ];
 
@@ -102,12 +102,12 @@ export default function AutopilotChecklist() {
             </Badge>
             
             <h1 className="heading-1 text-slate-900 mb-6">
-              <BrandLogo className="inline" /> Growth on Autopilot Checklist
+              <BrandLogo className="inline" /> Growth on Autopilot
             </h1>
             
             <p className="body-large text-slate-600 mb-8 max-w-3xl mx-auto">
-              The complete 68-point checklist used by leading med spas to eliminate manual tasks, 
-              achieve HIPAA compliance, and scale operations without adding overhead.
+              The comprehensive 68-point checklist that gives med spa owners complete freedom and autonomy. 
+              Build systems that run your practice so you can focus on what matters most - growing your business and serving clients.
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
@@ -139,11 +139,11 @@ export default function AutopilotChecklist() {
               </div>
               <div>
                 <div className="text-3xl font-bold text-primary mb-2">6</div>
-                <div className="text-sm text-slate-600">Key Domains</div>
+                <div className="text-sm text-slate-600">Automation Areas</div>
               </div>
               <div>
-                <div className="text-3xl font-bold text-primary mb-2">80%</div>
-                <div className="text-sm text-slate-600">Task Reduction</div>
+                <div className="text-3xl font-bold text-primary mb-2">100%</div>
+                <div className="text-sm text-slate-600">Owner Freedom</div>
               </div>
             </div>
           </div>
@@ -154,11 +154,11 @@ export default function AutopilotChecklist() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="heading-2 text-slate-900 mb-4">
-                Transform Your Med Spa Operations
+                Reclaim Your Freedom as a Business Owner
               </h2>
               <p className="body-large text-slate-600 max-w-3xl mx-auto">
-                This comprehensive checklist covers everything from IT infrastructure to business intelligence, 
-                giving you the roadmap to operational excellence.
+                Stop being trapped in day-to-day operations. This comprehensive checklist builds the systems and 
+                processes that give you complete autonomy to grow your business on your terms.
               </p>
             </div>
 
@@ -186,10 +186,10 @@ export default function AutopilotChecklist() {
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-16">
               <h2 className="heading-2 text-slate-900 mb-4">
-                6 Critical Domains for Med Spa Success
+                6 Areas of Automation for Complete Freedom
               </h2>
               <p className="body-large text-slate-600">
-                Each domain contains detailed checklists to systematize and future-proof your practice.
+                Each area builds the foundation for true business autonomy, allowing you to step away while your practice thrives.
               </p>
             </div>
 
@@ -230,11 +230,11 @@ export default function AutopilotChecklist() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <h2 className="heading-2 text-slate-900 mb-6">
-                  Put Your Med Spa on Autopilot
+                  True Business Freedom Through Automation
                 </h2>
                 <p className="body-large text-slate-600 mb-8">
-                  Our checklist includes proven automation workflows that eliminate manual tasks 
-                  and ensure consistent client experiences at scale.
+                  Break free from being the bottleneck in your own business. These proven workflows 
+                  create the autonomy successful owners crave - predictable growth without constant oversight.
                 </p>
                 
                 <div className="space-y-6">
@@ -243,8 +243,8 @@ export default function AutopilotChecklist() {
                       <ArrowRight className="h-4 w-4 text-primary" />
                     </div>
                     <div>
-                      <h4 className="heading-5 text-slate-900 mb-1">New Client Welcome Workflow</h4>
-                      <p className="body-base text-slate-600">Automatically sync leads → CRM → welcome sequence → EMR integration</p>
+                      <h4 className="heading-5 text-slate-900 mb-1">Self-Running Client Onboarding</h4>
+                      <p className="body-base text-slate-600">New clients flow seamlessly from inquiry to first appointment without your involvement</p>
                     </div>
                   </div>
                   
@@ -253,8 +253,8 @@ export default function AutopilotChecklist() {
                       <ArrowRight className="h-4 w-4 text-primary" />
                     </div>
                     <div>
-                      <h4 className="heading-5 text-slate-900 mb-1">Smart Rebooking Automation</h4>
-                      <p className="body-base text-slate-600">Trigger reminders via SMS + email + CRM tasks after each service</p>
+                      <h4 className="heading-5 text-slate-900 mb-1">Revenue That Runs Itself</h4>
+                      <p className="body-base text-slate-600">Intelligent rebooking sequences that maintain client relationships and drive repeat revenue</p>
                     </div>
                   </div>
                   
@@ -263,8 +263,8 @@ export default function AutopilotChecklist() {
                       <ArrowRight className="h-4 w-4 text-primary" />
                     </div>
                     <div>
-                      <h4 className="heading-5 text-slate-900 mb-1">Zero-Touch Staff Onboarding</h4>
-                      <p className="body-base text-slate-600">Pre-configured devices with apps, M365, EMR, and VPN access</p>
+                      <h4 className="heading-5 text-slate-900 mb-1">Effortless Team Scaling</h4>
+                      <p className="body-base text-slate-600">New hires are productive from day one with automated setup and training workflows</p>
                     </div>
                   </div>
                 </div>
@@ -294,10 +294,10 @@ export default function AutopilotChecklist() {
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="heading-2 text-slate-900 mb-4">
-                Get Your Free Autopilot Checklist
+                Claim Your Business Freedom Checklist
               </h2>
               <p className="body-large text-slate-600">
-                Download the complete 68-point checklist and start optimizing your med spa operations today.
+                Get the complete 68-point roadmap to building a med spa that runs without you.
               </p>
             </div>
 
@@ -357,10 +357,10 @@ export default function AutopilotChecklist() {
 
             <div className="bg-gradient-to-r from-primary/5 to-wellness/5 rounded-2xl p-8">
               <h3 className="heading-3 text-slate-900 mb-4">
-                Ready to Put Your Med Spa on Autopilot?
+                Ready to Break Free from Daily Operations?
               </h3>
               <p className="body-medium text-slate-600 mb-6">
-                Join hundreds of med spas who have streamlined their operations with <BrandLogo className="inline" />.
+                Join hundreds of med spa owners who have achieved true business autonomy with <BrandLogo className="inline" />.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <Button

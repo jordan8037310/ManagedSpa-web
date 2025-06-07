@@ -70,7 +70,7 @@ export function Header() {
                 Testimonials
               </button>
               <Link 
-                href="/autopilot-checklist"
+                href="/growth-checklist"
                 className="text-slate-600 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
               >
                 Free Checklist
@@ -122,7 +122,7 @@ export function Header() {
               Testimonials
             </button>
             <Link 
-              href="/autopilot-checklist"
+              href="/growth-checklist"
               className="block text-slate-600 hover:text-primary py-2"
             >
               Free Checklist
