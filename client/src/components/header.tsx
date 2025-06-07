@@ -65,10 +65,10 @@ export function Header() {
                 Testimonials
               </button>
               <Button
-                onClick={() => scrollToSection('contact')}
                 className="bg-primary hover:bg-primary/90 text-white"
+                asChild
               >
-                Get Started
+                <a href="/assessment">Get Started</a>
               </Button>
             </div>
           </div>
@@ -111,10 +111,10 @@ export function Header() {
               Testimonials
             </button>
             <Button
-              onClick={() => scrollToSection('contact')}
               className="block bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg text-center mt-4 w-full"
+              asChild
             >
-              Get Started
+              <a href="/assessment">Get Started</a>
             </Button>
           </div>
         )}

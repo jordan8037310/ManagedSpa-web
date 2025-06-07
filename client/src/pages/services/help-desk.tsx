@@ -53,9 +53,11 @@ export default function HelpDesk() {
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
               Never let IT issues disrupt your patient care. Our expert technicians are available around the clock to keep your practice running smoothly.
             </p>
-            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white">
-              <Phone className="mr-2 h-5 w-5" />
-              Call (800) MANAGED
+            <Button size="lg" className="bg-primary hover:bg-primary/90 text-white" asChild>
+              <a href="tel:+1-800-MNGDSPA">
+                <Phone className="mr-2 h-5 w-5" />
+                Call 1-800-MNGDSPA
+              </a>
             </Button>
           </div>
         </Section>

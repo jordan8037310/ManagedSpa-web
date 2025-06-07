@@ -288,7 +288,7 @@ export default function SupportPortal() {
             </p>
             <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
               <Phone className="mr-2 h-5 w-5" />
-              Emergency Hotline: (800) MANAGED
+              Emergency Hotline: 1-800-MNGDSPA
             </Button>
           </div>
         </Section>
