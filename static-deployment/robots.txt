@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://managedspa.com/sitemap.xml
+
+# Block common bot paths
+Disallow: /api/
+Disallow: /functions/
+Disallow: /_redirects
+Disallow: /static-deployment/
+
+# Allow important pages
+Allow: /services/
+Allow: /resources/
+Allow: /
+
+# Crawl delay for respectful indexing
+Crawl-delay: 1

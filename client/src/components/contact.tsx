@@ -56,9 +56,8 @@ export function Contact() {
     setIsSubmitting(true);
     
     try {
-      // For static deployment, form submissions should be handled by external services
-      // This example uses Formspree, but can be configured for other services
-      const response = await fetch('https://formspree.io/f/YOUR_FORM_ID', {
+      // Submit to Cloudflare Functions endpoint for static deployment
+      const response = await fetch('/api/consultation', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
