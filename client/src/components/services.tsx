@@ -74,10 +74,10 @@ export function Services() {
   return (
     <Section id="services" className="bg-slate-50">
       <div className="text-center mb-16">
-        <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
+        <h2 className="heading-2 text-slate-900 mb-4">
           Comprehensive IT Services for Aesthetic Wellness
         </h2>
-        <p className="text-xl text-slate-600 max-w-4xl mx-auto">
+        <p className="body-large text-slate-600 max-w-4xl mx-auto">
           From daily helpdesk support to strategic IT planning, we handle every aspect of your practice's technology needs.
         </p>
       </div>
@@ -99,11 +99,11 @@ export function Services() {
                   <Icon className={`${iconColorClass} h-6 w-6`} />
                 </div>
                 <ScrollLink href={service.link} className="block">
-                  <h3 className="text-lg font-semibold text-slate-900 mb-3 hover:text-primary transition-colors cursor-pointer">
+                  <h3 className="heading-5 text-slate-900 mb-3 hover:text-primary transition-colors cursor-pointer">
                     {service.title}
                   </h3>
                 </ScrollLink>
-                <p className="text-slate-600 mb-4 text-sm">{service.description}</p>
+                <p className="body-small text-slate-600 mb-4">{service.description}</p>
                 <ul className="space-y-2 text-xs text-slate-600">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center">

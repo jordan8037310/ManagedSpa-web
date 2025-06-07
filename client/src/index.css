@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -62,11 +64,82 @@
 
   body {
     @apply font-sans antialiased bg-background text-foreground;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  h1 {
+    font-weight: 800;
+  }
+  
+  h2 {
+    font-weight: 700;
+  }
+  
+  h3 {
+    font-weight: 600;
+  }
+  
+  h4 {
+    font-weight: 600;
+  }
+  
+  h5 {
+    font-weight: 500;
+  }
+  
+  h6 {
+    font-weight: 500;
   }
 
   html {
     scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .heading-1 {
+    @apply font-heading font-extrabold text-4xl lg:text-6xl leading-tight;
+  }
+  
+  .heading-2 {
+    @apply font-heading font-bold text-3xl lg:text-4xl leading-tight;
+  }
+  
+  .heading-3 {
+    @apply font-heading font-semibold text-2xl lg:text-3xl leading-tight;
+  }
+  
+  .heading-4 {
+    @apply font-heading font-semibold text-xl lg:text-2xl leading-tight;
+  }
+  
+  .heading-5 {
+    @apply font-heading font-medium text-lg leading-tight;
+  }
+  
+  .heading-6 {
+    @apply font-heading font-medium text-base leading-tight;
+  }
+  
+  .body-large {
+    @apply font-sans text-xl font-normal leading-relaxed;
+  }
+  
+  .body-medium {
+    @apply font-sans text-lg font-normal leading-relaxed;
+  }
+  
+  .body-base {
+    @apply font-sans text-base font-normal leading-normal;
+  }
+  
+  .body-small {
+    @apply font-sans text-sm font-normal leading-normal;
   }
 }
 

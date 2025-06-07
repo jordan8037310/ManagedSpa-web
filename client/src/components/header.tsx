@@ -31,7 +31,7 @@ export function Header() {
             <div className="flex-shrink-0">
               <button 
                 onClick={handleLogoClick}
-                className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors cursor-pointer"
+                className="heading-4 text-primary hover:text-primary/80 transition-colors cursor-pointer"
               >
                 ManagedSpa
               </button>

@@ -14,11 +14,11 @@ export function Hero() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl lg:text-6xl font-bold text-slate-900 leading-tight">
+              <h1 className="heading-1 text-slate-900">
                 All-You-Can-Eat{" "}
                 <span className="text-primary">IT Support</span> for Med Spas
               </h1>
-              <p className="text-xl text-slate-600 leading-relaxed">
+              <p className="body-large text-slate-600">
                 Unlimited IT support, Microsoft 365 integration, and HIPAA compliance for aesthetic wellness practices. One flat fee per staff member - no surprises, no limits.
               </p>
             </div>
