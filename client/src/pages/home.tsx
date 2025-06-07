@@ -5,6 +5,7 @@ import { Services } from "@/components/services";
 import { Microsoft365 } from "@/components/microsoft365";
 import { Pricing } from "@/components/pricing";
 import { Testimonials } from "@/components/testimonials";
+import { TypeformEmbed } from "@/components/typeform-embed";
 import { Contact } from "@/components/contact";
 import { Footer } from "@/components/footer";
 
@@ -19,6 +20,7 @@ export default function Home() {
         <Microsoft365 />
         <Pricing />
         <Testimonials />
+        <TypeformEmbed />
         <Contact />
       </main>
       <Footer />
