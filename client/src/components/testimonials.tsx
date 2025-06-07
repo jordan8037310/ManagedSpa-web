@@ -104,7 +104,7 @@ export function Testimonials() {
                 className="border-2 border-primary text-primary hover:bg-primary/5"
                 asChild
               >
-                <a href="tel:+1-800-MANAGED">Call (800) MANAGED</a>
+                <a href="tel:+1-800-MNGDSPA">Call 1-800-MNGDSPA</a>
               </Button>
             </div>
           </div>

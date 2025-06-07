@@ -1,9 +1,11 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { Link, useLocation } from "wouter";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [location] = useLocation();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
@@ -13,13 +15,26 @@ export function Header() {
     setMobileMenuOpen(false);
   };
 
+  const handleLogoClick = () => {
+    if (location !== '/') {
+      window.location.href = '/';
+    } else {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="bg-white shadow-sm border-b border-slate-200 sticky top-0 z-50">
       <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <h1 className="text-2xl font-bold text-primary">ManagedSpa</h1>
+              <button 
+                onClick={handleLogoClick}
+                className="text-2xl font-bold text-primary hover:text-primary/80 transition-colors cursor-pointer"
+              >
+                ManagedSpa
+              </button>
             </div>
           </div>
           
