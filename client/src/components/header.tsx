@@ -73,7 +73,7 @@ export function Header() {
                 href="/growth-checklist"
                 className="text-slate-600 hover:text-primary px-3 py-2 text-sm font-medium transition-colors"
               >
-                Free Checklist
+                Growth Checklist
               </Link>
               <Button
                 className="bg-primary hover:bg-primary/90 text-white"
@@ -125,7 +125,7 @@ export function Header() {
               href="/growth-checklist"
               className="block text-slate-600 hover:text-primary py-2"
             >
-              Free Checklist
+              Growth Checklist
             </Link>
             <Button
               className="block bg-primary hover:bg-primary/90 text-white px-4 py-2 rounded-lg text-center mt-4 w-full"
