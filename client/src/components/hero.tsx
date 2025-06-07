@@ -25,19 +25,19 @@ export function Hero() {
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
-                onClick={() => scrollToSection('contact')}
                 size="lg"
                 className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg shadow-lg"
+                asChild
               >
-                Get Free Consultation
+                <a href="/autopilot-checklist">Get Free Checklist</a>
               </Button>
               <Button
-                onClick={() => scrollToSection('services')}
+                onClick={() => scrollToSection('contact')}
                 variant="outline"
                 size="lg"
                 className="border-2 border-primary text-primary hover:bg-primary/5 px-8 py-4 text-lg"
               >
-                Learn More
+                Get Free Consultation
               </Button>
             </div>
 

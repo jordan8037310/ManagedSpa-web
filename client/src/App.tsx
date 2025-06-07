@@ -6,6 +6,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import Home from "@/pages/home";
 import Assessment from "@/pages/assessment";
 import Privacy from "@/pages/privacy";
+import AutopilotChecklist from "@/pages/autopilot-checklist";
 import NotFound from "@/pages/not-found";
 
 // Service pages
@@ -31,6 +32,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/assessment" component={Assessment} />
       <Route path="/privacy" component={Privacy} />
+      <Route path="/autopilot-checklist" component={AutopilotChecklist} />
       
       {/* Service Routes */}
       <Route path="/services/help-desk" component={HelpDesk} />
