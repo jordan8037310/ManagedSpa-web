@@ -1,0 +1,15 @@
+name = "managedspa"
+compatibility_date = "2024-01-01"
+pages_build_output_dir = "dist"
+
+[env.production]
+name = "managedspa"
+
+[env.preview]
+name = "managedspa-preview"
+
+[[env.production.vars]]
+NODE_ENV = "production"
+
+[[env.preview.vars]]
+NODE_ENV = "preview"
