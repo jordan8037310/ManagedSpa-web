@@ -46,10 +46,10 @@ export default function Assessment() {
         {/* Hero Section */}
         <section className="relative bg-gradient-to-br from-primary/10 to-wellness/10 py-20 lg:py-32">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-            <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">
+            <h1 className="heading-1 text-slate-900 mb-6">
               Free 60-Minute IT Assessment
             </h1>
-            <p className="text-xl text-slate-600 leading-relaxed mb-8 max-w-3xl mx-auto">
+            <p className="body-large text-slate-600 mb-8 max-w-3xl mx-auto">
               Get a comprehensive evaluation of your practice's technology infrastructure, security posture, and growth opportunities. No obligation, no pressure - just expert insights to help your practice thrive.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -76,10 +76,10 @@ export default function Assessment() {
         <Section className="bg-white">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
+              <h2 className="heading-2 text-slate-900 mb-4">
                 What You'll Get in Your Assessment
               </h2>
-              <p className="text-xl text-slate-600">
+              <p className="body-large text-slate-600">
                 Our comprehensive evaluation covers every aspect of your practice's technology needs.
               </p>
             </div>

@@ -51,10 +51,10 @@ export function Pricing() {
   return (
     <Section id="pricing" className="bg-slate-50">
       <div className="text-center mb-16">
-        <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
+        <h2 className="heading-2 text-slate-900 mb-4">
           Simple, Transparent Pricing
         </h2>
-        <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+        <p className="body-large text-slate-600 max-w-3xl mx-auto">
           One flat fee per staff member gives you unlimited IT support. No surprises, no hidden costs, no limits on help desk tickets.
         </p>
       </div>
@@ -62,17 +62,17 @@ export function Pricing() {
       <div className="max-w-4xl mx-auto">
         <Card className="shadow-xl overflow-hidden">
           <div className="bg-gradient-to-r from-primary to-wellness px-8 py-6">
-            <h3 className="text-2xl font-bold text-white text-center">All-You-Can-Eat IT Support</h3>
-            <p className="text-primary-foreground/80 text-center mt-2">Everything your med spa needs in one simple package</p>
+            <h3 className="heading-3 text-white text-center">All-You-Can-Eat IT Support</h3>
+            <p className="body-base text-primary-foreground/80 text-center mt-2">Everything your med spa needs in one simple package</p>
           </div>
           
           <CardContent className="px-8 py-12">
             <div className="text-center mb-8">
-              <div className="text-5xl font-bold text-slate-900 mb-2">
+              <div className="heading-1 text-slate-900 mb-2">
                 Custom Pricing
               </div>
-              <div className="text-xl text-slate-600">Per staff member, per month</div>
-              <div className="text-lg text-wellness font-semibold mt-2">Starting from $150/user/month</div>
+              <div className="body-large text-slate-600">Per staff member, per month</div>
+              <div className="body-medium text-wellness font-semibold mt-2">Starting from $150/user/month</div>
             </div>
 
             <div className="grid md:grid-cols-2 gap-8 mb-8">

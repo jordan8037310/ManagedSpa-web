@@ -38,10 +38,10 @@ export function Testimonials() {
   return (
     <Section id="testimonials" className="bg-white">
       <div className="text-center mb-16">
-        <h2 className="text-3xl lg:text-4xl font-bold text-slate-900 mb-4">
+        <h2 className="heading-2 text-slate-900 mb-4">
           Trusted by Leading Med Spas
         </h2>
-        <p className="text-xl text-slate-600 max-w-3xl mx-auto">
+        <p className="body-large text-slate-600 max-w-3xl mx-auto">
           See how aesthetic wellness practices are transforming their operations with ManagedSpa IT support.
         </p>
       </div>
@@ -65,7 +65,7 @@ export function Testimonials() {
                     ))}
                   </div>
                 </div>
-                <blockquote className="text-slate-700 text-lg mb-6">
+                <blockquote className="body-medium text-slate-700 mb-6">
                   "{testimonial.quote}"
                 </blockquote>
                 <div className="flex items-center space-x-4">
@@ -86,10 +86,10 @@ export function Testimonials() {
       <div className="mt-16 bg-gradient-to-r from-primary/5 to-wellness/5 rounded-2xl p-8 lg:p-12">
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           <div>
-            <h3 className="text-2xl lg:text-3xl font-bold text-slate-900 mb-4">
+            <h3 className="heading-3 text-slate-900 mb-4">
               Ready to Transform Your IT Experience?
             </h3>
-            <p className="text-lg text-slate-600 mb-6">
+            <p className="body-medium text-slate-600 mb-6">
               Join hundreds of med spas who have eliminated IT stress with our all-you-can-eat support model.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
