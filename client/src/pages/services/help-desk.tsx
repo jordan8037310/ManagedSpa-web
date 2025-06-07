@@ -3,6 +3,7 @@ import { Footer } from "@/components/footer";
 import { Section } from "@/components/ui/section";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
+import { BrandLogo } from "@/components/ui/brand-logo";
 import { Phone, Clock, Headphones, Zap, Shield, Users } from "lucide-react";
 
 const features = [

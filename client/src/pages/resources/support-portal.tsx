@@ -4,6 +4,7 @@ import { Section } from "@/components/ui/section";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
+import { BrandLogo } from "@/components/ui/brand-logo";
 import { Phone, Mail, MessageCircle, FileText, Search, Clock, Users, HelpCircle } from "lucide-react";
 
 const supportOptions = [
