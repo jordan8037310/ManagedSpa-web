@@ -60,16 +60,17 @@
 @layer base {
   * {
     @apply border-border;
+    font-family: 'Roboto', sans-serif !important;
   }
 
   body {
-    @apply font-sans antialiased bg-background text-foreground;
-    font-family: 'Roboto', sans-serif;
+    @apply bg-background text-foreground antialiased;
+    font-family: 'Roboto', sans-serif !important;
     font-weight: 400;
   }
   
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif !important;
   }
   
   h1 {
@@ -99,6 +100,16 @@
   html {
     scroll-behavior: smooth;
   }
+  
+  /* Ensure common elements use Roboto */
+  p, span, div, button, input, textarea, label, a {
+    font-family: 'Roboto', sans-serif !important;
+  }
+  
+  /* Override any potential third-party CSS */
+  .font-sans {
+    font-family: 'Roboto', sans-serif !important;
+  }
 }
 
 @layer components {
@@ -127,19 +138,23 @@
   }
   
   .body-large {
-    @apply font-sans text-xl font-normal leading-relaxed;
+    @apply text-xl font-normal leading-relaxed;
+    font-family: 'Roboto', sans-serif !important;
   }
   
   .body-medium {
-    @apply font-sans text-lg font-normal leading-relaxed;
+    @apply text-lg font-normal leading-relaxed;
+    font-family: 'Roboto', sans-serif !important;
   }
   
   .body-base {
-    @apply font-sans text-base font-normal leading-normal;
+    @apply text-base font-normal leading-normal;
+    font-family: 'Roboto', sans-serif !important;
   }
   
   .body-small {
-    @apply font-sans text-sm font-normal leading-normal;
+    @apply text-sm font-normal leading-normal;
+    font-family: 'Roboto', sans-serif !important;
   }
 }
 
