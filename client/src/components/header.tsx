@@ -9,6 +9,12 @@ export function Header() {
   const [location] = useLocation();
 
   const scrollToSection = (sectionId: string) => {
+    // If we're not on the homepage, navigate there first
+    if (location !== '/') {
+      window.location.href = `/#${sectionId}`;
+      return;
+    }
+    
     const element = document.getElementById(sectionId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
