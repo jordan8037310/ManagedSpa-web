@@ -1,6 +1,7 @@
-import { Headphones, Shield, Cloud, TrendingUp, Database, Wrench, Check } from "lucide-react";
+import { Headphones, Shield, Cloud, TrendingUp, Database, Wrench, Check, FileText, MessageCircle, Zap } from "lucide-react";
 import { Section } from "@/components/ui/section";
 import { Card, CardContent } from "@/components/ui/card";
+import { ScrollLink } from "@/components/ui/scroll-link";
 
 const services = [
   {
@@ -8,42 +9,64 @@ const services = [
     title: "24/7 Help Desk Support",
     description: "Round-the-clock technical assistance for your entire team. Get help whenever you need it, no matter the time.",
     features: ["Unlimited support tickets", "Remote troubleshooting", "Software training"],
-    color: "primary"
+    color: "primary",
+    link: "/services/help-desk"
   },
   {
     icon: Shield,
     title: "HIPAA Compliance & Security",
     description: "Multi-layered security designed specifically for healthcare practices handling sensitive patient data.",
     features: ["Email encryption", "Firewall management", "Regular security audits"],
-    color: "wellness"
+    color: "wellness",
+    link: "/services/hipaa-compliance"
   },
   {
     icon: Cloud,
-    title: "Cloud Integration",
-    description: "Seamless integration with spa management software, scheduling systems, and Microsoft 365.",
-    features: ["Software integration", "Data migration", "Vendor coordination"],
-    color: "accent-orange"
+    title: "Microsoft 365 Integration",
+    description: "Complete Microsoft 365 setup and management designed specifically for medical spa environments.",
+    features: ["Professional email", "Document management", "Team collaboration"],
+    color: "accent-orange",
+    link: "/services/microsoft-365"
   },
   {
     icon: TrendingUp,
-    title: "Proactive Monitoring",
-    description: "Continuous system monitoring to prevent issues before they impact your practice operations.",
-    features: ["Network monitoring", "Performance optimization", "Preventive maintenance"],
-    color: "primary"
+    title: "Security Management",
+    description: "Enterprise-grade security solutions protecting your practice from cyber threats and data breaches.",
+    features: ["Advanced firewall", "24/7 monitoring", "Threat detection"],
+    color: "primary",
+    link: "/services/security-management"
   },
   {
     icon: Database,
-    title: "Data Backup & Recovery",
-    description: "Automated backups and disaster recovery planning to protect your critical business data.",
-    features: ["Automated backups", "Disaster recovery", "Business continuity"],
-    color: "wellness"
+    title: "Cloud Integration",
+    description: "Seamless cloud migration and integration solutions for modern medical spa operations.",
+    features: ["Data migration", "System integration", "Cloud optimization"],
+    color: "wellness",
+    link: "/services/cloud-integration"
   },
   {
-    icon: Wrench,
-    title: "On-Site Support",
-    description: "When remote support isn't enough, our technicians provide on-site assistance at your location.",
-    features: ["Equipment installation", "Network setup", "Staff training"],
-    color: "accent-orange"
+    icon: FileText,
+    title: "EHR/EMR Integration",
+    description: "Specialized integration and management of medical spa EHR systems like Aesthetic Record and Symplast.",
+    features: ["Aesthetic Record", "Symplast", "Nextech"],
+    color: "accent-orange",
+    link: "/services/ehr-emr-integration"
+  },
+  {
+    icon: MessageCircle,
+    title: "CRM & Multi-Channel Chat",
+    description: "Unified customer relationship management with integrated SMS, social media, and communication tools.",
+    features: ["HighLevel integration", "Teams phone system", "Social messaging"],
+    color: "primary",
+    link: "/services/crm-multi-channel"
+  },
+  {
+    icon: Zap,
+    title: "Med Spa Automation",
+    description: "Intelligent business process automation for client lifecycle management and operational efficiency.",
+    features: ["Customer lifecycle", "Recurring billing", "Churn management"],
+    color: "wellness",
+    link: "/services/medspa-automation"
   }
 ];
 
@@ -59,7 +82,7 @@ export function Services() {
         </p>
       </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
         {services.map((service, index) => {
           const Icon = service.icon;
           const iconColorClass = service.color === "primary" ? "text-primary" : 
@@ -71,16 +94,20 @@ export function Services() {
           
           return (
             <Card key={index} className="hover:shadow-xl transition-shadow">
-              <CardContent className="p-8">
-                <div className={`w-12 h-12 ${bgColorClass} rounded-lg flex items-center justify-center mb-6`}>
+              <CardContent className="p-6">
+                <div className={`w-12 h-12 ${bgColorClass} rounded-lg flex items-center justify-center mb-4`}>
                   <Icon className={`${iconColorClass} h-6 w-6`} />
                 </div>
-                <h3 className="text-xl font-semibold text-slate-900 mb-4">{service.title}</h3>
-                <p className="text-slate-600 mb-4">{service.description}</p>
-                <ul className="space-y-2 text-sm text-slate-600">
+                <ScrollLink href={service.link} className="block">
+                  <h3 className="text-lg font-semibold text-slate-900 mb-3 hover:text-primary transition-colors cursor-pointer">
+                    {service.title}
+                  </h3>
+                </ScrollLink>
+                <p className="text-slate-600 mb-4 text-sm">{service.description}</p>
+                <ul className="space-y-2 text-xs text-slate-600">
                   {service.features.map((feature, featureIndex) => (
                     <li key={featureIndex} className="flex items-center">
-                      <Check className="h-4 w-4 text-wellness mr-2 flex-shrink-0" />
+                      <Check className="h-3 w-3 text-wellness mr-2 flex-shrink-0" />
                       {feature}
                     </li>
                   ))}
