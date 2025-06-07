@@ -12,6 +12,9 @@ import HIPAACompliance from "@/pages/services/hipaa-compliance";
 import Microsoft365 from "@/pages/services/microsoft-365";
 import SecurityManagement from "@/pages/services/security-management";
 import CloudIntegration from "@/pages/services/cloud-integration";
+import EHRIntegration from "@/pages/services/ehr-emr-integration";
+import CRMMultiChannel from "@/pages/services/crm-multi-channel";
+import MedSpaAutomation from "@/pages/services/medspa-automation";
 
 // Resource pages
 import HIPAAGuide from "@/pages/resources/hipaa-guide";
@@ -31,6 +34,9 @@ function Router() {
       <Route path="/services/microsoft-365" component={Microsoft365} />
       <Route path="/services/security-management" component={SecurityManagement} />
       <Route path="/services/cloud-integration" component={CloudIntegration} />
+      <Route path="/services/ehr-emr-integration" component={EHRIntegration} />
+      <Route path="/services/crm-multi-channel" component={CRMMultiChannel} />
+      <Route path="/services/medspa-automation" component={MedSpaAutomation} />
       
       {/* Resource Routes */}
       <Route path="/resources/hipaa-guide" component={HIPAAGuide} />

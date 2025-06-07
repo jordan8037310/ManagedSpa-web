@@ -6,7 +6,10 @@ const services = [
   { name: "HIPAA Compliance", path: "/services/hipaa-compliance" },
   { name: "Microsoft 365", path: "/services/microsoft-365" },
   { name: "Security Management", path: "/services/security-management" },
-  { name: "Cloud Integration", path: "/services/cloud-integration" }
+  { name: "Cloud Integration", path: "/services/cloud-integration" },
+  { name: "EHR/EMR Integration", path: "/services/ehr-emr-integration" },
+  { name: "CRM & Multi-Channel", path: "/services/crm-multi-channel" },
+  { name: "Med Spa Automation", path: "/services/medspa-automation" }
 ];
 
 const resources = [
