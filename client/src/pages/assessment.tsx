@@ -95,8 +95,8 @@ export default function Assessment() {
                       </div>
                     </div>
                     <div>
-                      <h3 className="text-lg font-semibold text-slate-900 mb-2">{benefit.title}</h3>
-                      <p className="text-slate-600">{benefit.description}</p>
+                      <h3 className="heading-5 text-slate-900 mb-2">{benefit.title}</h3>
+                      <p className="body-base text-slate-600">{benefit.description}</p>
                     </div>
                   </div>
                 );
@@ -104,10 +104,10 @@ export default function Assessment() {
             </div>
 
             <div className="bg-gradient-to-r from-primary/5 to-wellness/5 rounded-2xl p-8 text-center">
-              <h3 className="text-2xl font-bold text-slate-900 mb-4">
+              <h3 className="heading-3 text-slate-900 mb-4">
                 Ready to Transform Your IT Experience?
               </h3>
-              <p className="text-lg text-slate-600 mb-6">
+              <p className="body-medium text-slate-600 mb-6">
                 Join hundreds of med spas who have eliminated IT stress with our expert guidance.
               </p>
               <Button
