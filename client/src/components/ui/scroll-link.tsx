@@ -1,4 +1,4 @@
-import { Link } from "wouter";
+import { useLocation } from "wouter";
 
 interface ScrollLinkProps {
   href: string;
@@ -7,7 +7,11 @@ interface ScrollLinkProps {
 }
 
 export function ScrollLink({ href, className, children }: ScrollLinkProps) {
-  const handleClick = () => {
+  const [, setLocation] = useLocation();
+  
+  const handleClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    setLocation(href);
     // Scroll to top after a short delay to allow navigation
     setTimeout(() => {
       window.scrollTo({ top: 0, behavior: 'smooth' });
@@ -15,8 +19,8 @@ export function ScrollLink({ href, className, children }: ScrollLinkProps) {
   };
 
   return (
-    <Link href={href} className={className} onClick={handleClick}>
+    <a href={href} className={className} onClick={handleClick}>
       {children}
-    </Link>
+    </a>
   );
 }
