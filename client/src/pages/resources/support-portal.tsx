@@ -220,7 +220,7 @@ export default function SupportPortal() {
                   System Status
                 </h2>
                 <p className="text-lg text-muted-foreground mb-8">
-                  Real-time status of all ManagedSpa services and systems.
+                  Real-time status of all <BrandLogo className="inline" /> services and systems.
                 </p>
 
                 <Card className="shadow-lg">

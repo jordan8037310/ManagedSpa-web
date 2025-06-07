@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { Link, useLocation } from "wouter";
+import { BrandLogo } from "@/components/ui/brand-logo";
 
 export function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -29,12 +30,10 @@ export function Header() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <button 
+              <BrandLogo 
+                className="heading-4 text-primary hover:text-primary/80 transition-colors"
                 onClick={handleLogoClick}
-                className="heading-4 text-primary hover:text-primary/80 transition-colors cursor-pointer"
-              >
-                ManagedSpa
-              </button>
+              />
             </div>
           </div>
           

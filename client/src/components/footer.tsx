@@ -1,5 +1,6 @@
 import { Section } from "@/components/ui/section";
 import { ScrollLink } from "@/components/ui/scroll-link";
+import { BrandLogo } from "@/components/ui/brand-logo";
 
 const services = [
   { name: "24/7 Help Desk", path: "/services/help-desk" },
@@ -26,7 +27,7 @@ export function Footer() {
       <Section className="py-0">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
-            <h3 className="text-2xl font-bold text-primary">ManagedSpa</h3>
+            <BrandLogo className="text-2xl text-primary" />
             <p className="text-slate-300">
               All-inclusive IT support designed specifically for aesthetic wellness practices and med spas.
             </p>
@@ -98,7 +99,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-slate-800 mt-12 pt-8 text-center text-slate-400">
-          <p>&copy; 2025 ManagedSpa. All rights reserved. | <a href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</a></p>
+          <p>&copy; 2025 <BrandLogo className="inline" />. All rights reserved. | <a href="/privacy" className="hover:text-primary transition-colors">Privacy Policy</a></p>
         </div>
       </Section>
     </footer>

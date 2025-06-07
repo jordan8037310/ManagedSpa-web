@@ -154,7 +154,7 @@ export default function HelpDesk() {
               Ready to Experience Stress-Free IT Support?
             </h2>
             <p className="text-xl text-primary-foreground/90 mb-8">
-              Join hundreds of medical spas who trust ManagedSpa for their IT needs.
+              Join hundreds of medical spas who trust <BrandLogo className="inline" /> for their IT needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90" asChild>
