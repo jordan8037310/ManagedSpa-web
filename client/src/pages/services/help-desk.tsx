@@ -128,7 +128,7 @@ export default function HelpDesk() {
                     <div className="space-y-4">
                       <div className="flex justify-between">
                         <span className="text-muted-foreground">Average Response Time:</span>
-                        <span className="font-semibold text-primary">< 15 minutes</span>
+                        <span className="font-semibold text-primary">Under 15 minutes</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-muted-foreground">Resolution Rate:</span>

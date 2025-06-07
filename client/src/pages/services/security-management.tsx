@@ -201,7 +201,7 @@ export default function SecurityManagement() {
                     <div className="space-y-4">
                       <div className="flex justify-between">
                         <span className="text-muted-foreground">Response Time:</span>
-                        <span className="font-semibold text-primary">< 5 minutes</span>
+                        <span className="font-semibold text-primary">Under 5 minutes</span>
                       </div>
                       <div className="flex justify-between">
                         <span className="text-muted-foreground">Threat Detection:</span>
