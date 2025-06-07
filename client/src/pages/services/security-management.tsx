@@ -228,12 +228,14 @@ export default function SecurityManagement() {
               Don't wait for a security incident. Get comprehensive protection designed for medical practices.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
-                <Shield className="mr-2 h-5 w-5" />
-                Free Security Audit
+              <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90" asChild>
+                <a href="/assessment">
+                  <Shield className="mr-2 h-5 w-5" />
+                  Free Security Audit
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Download Security Guide
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" asChild>
+                <a href="/resources/security-checklist">Download Security Guide</a>
               </Button>
             </div>
           </div>

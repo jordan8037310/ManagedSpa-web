@@ -204,8 +204,8 @@ export default function SecurityChecklist() {
                   <p className="text-muted-foreground mb-6">
                     Get a comprehensive security evaluation of your practice with actionable recommendations.
                   </p>
-                  <Button className="w-full bg-primary hover:bg-primary/90 text-white mb-4">
-                    Schedule Free Assessment
+                  <Button className="w-full bg-primary hover:bg-primary/90 text-white mb-4" asChild>
+                    <a href="/assessment">Schedule Free Assessment</a>
                   </Button>
                   <Button variant="outline" className="w-full">
                     <Download className="mr-2 h-4 w-4" />

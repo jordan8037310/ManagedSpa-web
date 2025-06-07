@@ -193,12 +193,14 @@ export default function HIPAACompliance() {
               Get a comprehensive HIPAA compliance assessment and protect your patients' data today.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
-                <Shield className="mr-2 h-5 w-5" />
-                Free Compliance Audit
+              <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90" asChild>
+                <a href="/assessment">
+                  <Shield className="mr-2 h-5 w-5" />
+                  Free Compliance Audit
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Download HIPAA Guide
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" asChild>
+                <a href="/resources/hipaa-guide">Download HIPAA Guide</a>
               </Button>
             </div>
           </div>

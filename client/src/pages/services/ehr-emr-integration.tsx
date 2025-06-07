@@ -247,12 +247,14 @@ export default function EHRIntegration() {
               Get expert EHR integration and management tailored specifically for your med spa practice.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
-                <Shield className="mr-2 h-5 w-5" />
-                Free EHR Assessment
+              <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90" asChild>
+                <a href="/assessment">
+                  <Shield className="mr-2 h-5 w-5" />
+                  Free EHR Assessment
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Schedule Demo
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" asChild>
+                <a href="tel:+1-800-MNGDSPA">Call 1-800-MNGDSPA</a>
               </Button>
             </div>
           </div>

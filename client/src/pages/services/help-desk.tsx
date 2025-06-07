@@ -155,12 +155,14 @@ export default function HelpDesk() {
               Join hundreds of medical spas who trust ManagedSpa for their IT needs.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
-                <Phone className="mr-2 h-5 w-5" />
-                Call (800) MANAGED
+              <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90" asChild>
+                <a href="tel:+1-800-MNGDSPA">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call 1-800-MNGDSPA
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                Schedule Assessment
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" asChild>
+                <a href="/assessment">Schedule Assessment</a>
               </Button>
             </div>
           </div>

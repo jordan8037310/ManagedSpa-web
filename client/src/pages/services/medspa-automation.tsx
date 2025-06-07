@@ -347,12 +347,14 @@ export default function MedSpaAutomation() {
               Transform your practice with intelligent automation that works 24/7 to grow your business and delight your clients.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
-                <Zap className="mr-2 h-5 w-5" />
-                Free Automation Assessment
+              <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90" asChild>
+                <a href="/assessment">
+                  <Zap className="mr-2 h-5 w-5" />
+                  Free Automation Assessment
+                </a>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                See Demo Workflows
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" asChild>
+                <a href="tel:+1-800-MNGDSPA">Call 1-800-MNGDSPA</a>
               </Button>
             </div>
           </div>
