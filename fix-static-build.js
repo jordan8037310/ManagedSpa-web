@@ -1,13 +1,30 @@
 #!/usr/bin/env node
 
+import { exec } from 'child_process';
+import { promisify } from 'util';
 import fs from 'fs/promises';
 import path from 'path';
 
-async function fixStaticBuild() {
-  console.log('Fixing static build structure...');
+const execAsync = promisify(exec);
+
+async function buildStatic() {
+  console.log('Building static deployment...');
   
   try {
-    // Check if dist/public exists
+    // Clean previous builds
+    try {
+      await fs.rm('dist', { recursive: true, force: true });
+    } catch (e) {
+      // Directory might not exist
+    }
+
+    // Build frontend only (no server for static deployment)
+    console.log('Building frontend...');
+    const { stdout, stderr } = await execAsync('npx vite build');
+    console.log(stdout);
+    if (stderr) console.warn(stderr);
+
+    // Check if frontend built to dist/public and move files
     const publicExists = await fs.access('dist/public').then(() => true).catch(() => false);
     
     if (publicExists) {
@@ -21,53 +38,31 @@ async function fixStaticBuild() {
         const destPath = path.join('dist', item.name);
         
         if (item.isDirectory()) {
-          // Copy directory recursively
           await fs.cp(sourcePath, destPath, { recursive: true });
         } else {
-          // Copy file
           await fs.copyFile(sourcePath, destPath);
         }
       }
       
       // Remove the public directory
       await fs.rm('dist/public', { recursive: true });
-      
-      console.log('Static build structure fixed successfully');
-      
-      // Verify the result
-      const distFiles = await fs.readdir('dist');
-      console.log('Files in dist:', distFiles.join(', '));
-      
-      // Check for index.html
-      const hasIndex = distFiles.includes('index.html');
-      if (hasIndex) {
-        console.log('✓ index.html found in dist/');
-      } else {
-        console.log('✗ index.html not found in dist/');
-      }
-      
-    } else {
-      console.log('dist/public not found - checking if files are already in correct location...');
-      
-      const distExists = await fs.access('dist').then(() => true).catch(() => false);
-      if (distExists) {
-        const distFiles = await fs.readdir('dist');
-        console.log('Files in dist:', distFiles.join(', '));
-        
-        if (distFiles.includes('index.html')) {
-          console.log('✓ Build structure is already correct');
-        } else {
-          console.log('✗ index.html not found in dist/');
-        }
-      } else {
-        console.log('✗ dist directory not found');
-      }
     }
+
+    // Verify static build
+    const distFiles = await fs.readdir('dist');
+    const hasIndex = distFiles.includes('index.html');
     
+    if (hasIndex) {
+      console.log('✓ Static build successful');
+      console.log('Files:', distFiles.join(', '));
+    } else {
+      throw new Error('index.html not found in dist/');
+    }
+
   } catch (error) {
-    console.error('Error fixing static build:', error.message);
+    console.error('Build failed:', error.message);
     process.exit(1);
   }
 }
 
-fixStaticBuild();
+buildStatic();
