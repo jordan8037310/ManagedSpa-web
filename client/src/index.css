@@ -60,7 +60,6 @@
 @layer base {
   * {
     @apply border-border;
-    font-family: 'Roboto', sans-serif !important;
   }
 
   body {
@@ -102,7 +101,7 @@
   }
   
   /* Ensure common elements use Roboto */
-  p, span, div, button, input, textarea, label, a {
+  p, span, button, input, textarea, label, a {
     font-family: 'Roboto', sans-serif !important;
   }
   
