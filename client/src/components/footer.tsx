@@ -1,19 +1,20 @@
 import { Section } from "@/components/ui/section";
+import { Link } from "wouter";
 
 const services = [
-  "24/7 Help Desk",
-  "HIPAA Compliance",
-  "Microsoft 365",
-  "Security Management",
-  "Cloud Integration"
+  { name: "24/7 Help Desk", path: "/services/help-desk" },
+  { name: "HIPAA Compliance", path: "/services/hipaa-compliance" },
+  { name: "Microsoft 365", path: "/services/microsoft-365" },
+  { name: "Security Management", path: "/services/security-management" },
+  { name: "Cloud Integration", path: "/services/cloud-integration" }
 ];
 
 const resources = [
-  "HIPAA Guide for Med Spas",
-  "IT Security Checklist",
-  "Case Studies",
-  "Blog",
-  "Support Portal"
+  { name: "HIPAA Guide for Med Spas", path: "/resources/hipaa-guide" },
+  { name: "IT Security Checklist", path: "/resources/security-checklist" },
+  { name: "Case Studies", path: "/resources/case-studies" },
+  { name: "Blog", path: "/resources/blog" },
+  { name: "Support Portal", path: "/resources/support-portal" }
 ];
 
 export function Footer() {
@@ -50,7 +51,7 @@ export function Footer() {
             <ul className="space-y-2 text-slate-300">
               {services.map((service, index) => (
                 <li key={index}>
-                  <a href="#" className="hover:text-primary transition-colors">{service}</a>
+                  <Link href={service.path} className="hover:text-primary transition-colors">{service.name}</Link>
                 </li>
               ))}
             </ul>
@@ -61,7 +62,7 @@ export function Footer() {
             <ul className="space-y-2 text-slate-300">
               {resources.map((resource, index) => (
                 <li key={index}>
-                  <a href="#" className="hover:text-primary transition-colors">{resource}</a>
+                  <Link href={resource.path} className="hover:text-primary transition-colors">{resource.name}</Link>
                 </li>
               ))}
             </ul>
