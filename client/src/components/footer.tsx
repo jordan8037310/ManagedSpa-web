@@ -1,5 +1,5 @@
 import { Section } from "@/components/ui/section";
-import { Link } from "wouter";
+import { ScrollLink } from "@/components/ui/scroll-link";
 
 const services = [
   { name: "24/7 Help Desk", path: "/services/help-desk" },
@@ -54,7 +54,7 @@ export function Footer() {
             <ul className="space-y-2 text-slate-300">
               {services.map((service, index) => (
                 <li key={index}>
-                  <Link href={service.path} className="hover:text-primary transition-colors">{service.name}</Link>
+                  <ScrollLink href={service.path} className="hover:text-primary transition-colors">{service.name}</ScrollLink>
                 </li>
               ))}
             </ul>
@@ -65,7 +65,7 @@ export function Footer() {
             <ul className="space-y-2 text-slate-300">
               {resources.map((resource, index) => (
                 <li key={index}>
-                  <Link href={resource.path} className="hover:text-primary transition-colors">{resource.name}</Link>
+                  <ScrollLink href={resource.path} className="hover:text-primary transition-colors">{resource.name}</ScrollLink>
                 </li>
               ))}
             </ul>
