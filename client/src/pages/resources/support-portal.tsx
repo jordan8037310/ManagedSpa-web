@@ -286,9 +286,11 @@ export default function SupportPortal() {
             <p className="text-xl text-primary-foreground/90 mb-8">
               Critical issues affecting patient care? We're here around the clock.
             </p>
-            <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90">
-              <Phone className="mr-2 h-5 w-5" />
-              Emergency Hotline: 1-800-MNGDSPA
+            <Button size="lg" variant="secondary" className="bg-white text-primary hover:bg-white/90" asChild>
+              <a href="tel:+1-800-MNGDSPA">
+                <Phone className="mr-2 h-5 w-5" />
+                Emergency Hotline: 1-800-MNGDSPA
+              </a>
             </Button>
           </div>
         </Section>
