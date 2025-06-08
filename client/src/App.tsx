@@ -7,6 +7,7 @@ import Home from "@/pages/home";
 import Assessment from "@/pages/assessment";
 import Privacy from "@/pages/privacy";
 import AutopilotChecklist from "@/pages/autopilot-checklist";
+import MedShift from "@/pages/medshift";
 import NotFound from "@/pages/not-found";
 
 // Service pages
@@ -33,6 +34,7 @@ function Router() {
       <Route path="/assessment" component={Assessment} />
       <Route path="/privacy" component={Privacy} />
       <Route path="/growth-checklist" component={AutopilotChecklist} />
+      <Route path="/medshift" component={MedShift} />
       
       {/* Service Routes */}
       <Route path="/services/help-desk" component={HelpDesk} />
