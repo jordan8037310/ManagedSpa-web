@@ -16,7 +16,7 @@ export function TypeformEmbed() {
     <div className="w-full">
       <div 
         className="bg-white rounded-lg shadow-lg overflow-hidden"
-        style={{ minHeight: '600px' }}
+        style={{ minHeight: '650px' }}
       >
         <div data-tf-live="01JX5FBMEN4RNMY0QEZK2J42D4"></div>
       </div>
