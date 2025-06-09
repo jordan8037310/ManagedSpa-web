@@ -13,26 +13,13 @@ export function TypeformEmbed() {
   }, []);
 
   return (
-    <Section id="contact" className="py-16 bg-gradient-to-br from-pink-50 to-rose-50">
-      <div className="container mx-auto px-4">
-        <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">
-            Get Your Free IT Assessment
-          </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Tell us about your practice and we'll provide a customized IT roadmap to help you grow while staying HIPAA compliant.
-          </p>
-        </div>
-        
-        <div className="max-w-4xl mx-auto">
-          <div 
-            className="bg-white rounded-lg shadow-lg overflow-hidden"
-            style={{ minHeight: '600px' }}
-          >
-            <div data-tf-live="01JX5FBMEN4RNMY0QEZK2J42D4"></div>
-          </div>
-        </div>
+    <div className="w-full">
+      <div 
+        className="bg-white rounded-lg shadow-lg overflow-hidden"
+        style={{ minHeight: '600px' }}
+      >
+        <div data-tf-live="01JX5FBMEN4RNMY0QEZK2J42D4"></div>
       </div>
-    </Section>
+    </div>
   );
 }
