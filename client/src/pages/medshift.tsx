@@ -166,34 +166,7 @@ export default function MedShift() {
               {/* Right Column - TypeForm */}
               <div className="lg:col-span-1">
                 <div className="sticky top-24">
-                  <div className="bg-gradient-to-br from-primary/5 to-blue-50 rounded-2xl p-6 mb-6">
-                    <h3 className="heading-4 text-slate-900 mb-3">
-                      Ready to Accelerate Growth?
-                    </h3>
-                    <p className="body-base text-slate-600 mb-4">
-                      Get your personalized ManagedSpa + MedShift implementation plan.
-                    </p>
-                  </div>
-                  
-                  <div className="bg-white rounded-2xl shadow-lg border border-slate-200 p-6">
-                    <TypeformEmbed />
-                  </div>
-                  
-                  <div className="mt-6 text-center">
-                    <p className="body-small text-slate-600 mb-4">
-                      Prefer to speak with someone directly?
-                    </p>
-                    <Button
-                      variant="outline"
-                      className="border-2 border-primary text-primary hover:bg-primary/5 w-full"
-                      asChild
-                    >
-                      <a href="tel:+1-800-MNGDSPA">
-                        <Phone className="mr-2 h-4 w-4" />
-                        Call 1-800-MNGDSPA
-                      </a>
-                    </Button>
-                  </div>
+                  <TypeformEmbed />
                 </div>
               </div>
             </div>
